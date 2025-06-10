@@ -1,0 +1,47 @@
+{
+  "name": "usync-dict",
+  "version": "1.0.5",
+  "description": "Un utilitaire en ligne de commande pour gérer facilement les dictionnaires de traduction uSync dans vos projets Umbraco",
+  "main": "usync-dict.js",
+  "bin": {
+    "usync-dict": "usync-dict.js"
+  },
+  "volta": {
+    "node": "18.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node -e \"try { require('fs').chmodSync('usync-dict.js', '755') } catch(e) {}\""
+  },
+  "keywords": [
+    "umbraco",
+    "usync",
+    "dictionary",
+    "translation",
+    "cli"
+  ],
+  "author": "Eric Forgues",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericforgues/usync-dict.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericforgues/usync-dict/issues"
+  },
+  "homepage": "https://github.com/ericforgues/usync-dict#readme",
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
